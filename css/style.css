@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    
+}
+
+
+/*============================= Header Bar  =============================*/
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 9999;
+}
+
+.logo_header a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Akaya Kanadaka', cursive;
+    outline: none;
+}
+
+.link_header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    column-gap: 50px;
+    margin-left: 20px;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    width: 100px;
+    outline: none;
+    text-align: center;
+}
+
+.link_header a:hover{
+    
+    border-bottom:1px solid black;
+    background-color: #fff;
+    text-align: center;
+    color: black;
+    outline: none;
+}
+
+.header i{
+    color: #fff;
+}
+
+.header .toggle{
+    display: none;
+}
+
+/*=============================oooOooo=============================*/
+
+
+/*============================= Header Introduction  =============================*/
+
+.introduction_header{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/introduction/home.jpg);
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.introduction_header h1{
+    color: #fff;
+    
+}
+
+.introduction_header span{
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.introduction_header a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(48, 46, 46);
+    display: flex;
+    padding: 15px 50px;
+    border-radius: 20px;
+    outline: none;
+}
+.introduction_header a:hover{
+    transition-delay: 50ms;
+    background-color: black;
+    outline: none;
+}
+/*=============================oooOooo=============================*/
+
+/*============================= Intro for what we do =============================*/
+
+.who_cnt{
+    display: flex;
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.who_pic{
+    width: 45%;
+    background-image: url("../images/introduction/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.who_info{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 20px;
+    border: .5px solid #ccc;
+}
+
+.who_info h1{
+    margin: 15px 0;
+}
+
+.who_info a{
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    margin: 15px 0;
+    outline: none;
+}
+.who_info a:hover{
+    border: .5px solid #ccc;
+    color: black;
+    background-color: #fff;
+    outline: none;
+}
+
+/*=============================oooOooo=============================*/
+
+/*============================= Language =============================*/
+
+.lng_cnt_all{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding-top: 155px;
+    padding-bottom: 50px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%);
+}
+
+.language_learn{
+    flex-wrap: wrap;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: .8s;
+}
+.language_learn:hover{
+    transform: scale(1.1);
+}
+.language_learn a{
+    display: flex;
+    height: 40px;
+    width: 30%;
+    background-color: black;
+    margin: 10px 0 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+}
+.language_learn a:hover{
+    color: black;
+    background-color: #fff;
+    border: .5px solid #ccc;
+    outline: none;
+}
+.language_learn img{
+    width: 50px;
+    margin: 5px;
+}
+
+/*=============================oooOooo=============================*/
+
+
+
+/*============================= design wlc =============================*/
+.cnt_design_wlc{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/design/design.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    padding: 60px 0;
+}
+.cnt_design_wlc h1{
+    margin-bottom: 40px;
+}
+.cnt_design_wlc a{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 30px 0 30px;
+    border-radius: 10px;
+}
+.cnt_design_wlc a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*=============================oooOooo=============================*/
+
+/*============================= design tool =============================*/
+.cnt_dsg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px auto;
+    height: auto;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.dsg_tool img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.dsg_tool h3{
+    margin: 10px;
+}
+
+.dsg_tool{
+    margin: 30px;
+    width: 300px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: .5px solid #ccc;
+    align-items: center;
+}
+
+.dsg_tool a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.dsg_tool a:hover{
+    background-color: #fff;
+    color: black;
+    border: .5px solid #ccc;
+}
+
+
+/*=============================oooOooo=============================*/
+
+/*============================= Photographing =============================*/
+
+.photographe_wlcm{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/drone.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    padding: 60px 0;
+}
+
+.photographe_wlcm h1{
+    margin: 15px 0;
+}
+
+.photographe_wlcm a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 20%;
+    height: 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.photographe_wlcm a:hover{
+    color: #fff;
+    background-color: black;
+    transition: ease-out .5s;
+}
+
+/*=============================oooOooo=============================*/
+
+.cnt_home_all_links{
+    padding-top: 80px;
+}
+
+/*============================= Photographing buy tool =============================*/
+.cnt_photographe_tool{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.photographe_tool{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    border: .5px solid #ccc;
+    transition: .8s;
+}
+
+.photographe_tool img{
+    width: 100%;
+    height: 270px;
+}
+
+.photographe_tool p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.photographe_tool a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.photographe_tool a:hover{
+    background-color: #fff;
+    color: black;
+    border: .5px solid #ccc;
+}
+
+
+.photographe_tool:hover{
+    transform: scale(1.1);
+}
+
+.product_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.product_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+.product_photo:hover{
+    background-color: #fff;
+    color: black;
+    border: .5px solid #ccc;
+}
+
+/*=============================oooOooo=============================*/
+
+
+/*============================= host info =============================*/
+.cnt_host_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../images/host_info/hostpic.jpg);
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+.host_info_text{
+    text-align: center;
+    padding: 0px 20px 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    background-color: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 108));
+    border: 1px solid #fff;
+    color:  #fff;
+    align-items: center;
+    margin: 40px 0;
+}
+.host_info_text h1{
+    margin: 15px 0;
+}
+
+.host_info_text a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 20%;
+    height: 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.host_info_text a:hover{
+    color: #fff;
+    background-color: black;
+    transition: ease-out .5s;
+}
+
+
+
+/*=============================oooOooo=============================*/
+
+.title_prnc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*============================= host buy =============================*/
+
+.cnt_host_buy{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.host_lvl{
+    margin: 20px 0;
+    flex-wrap: wrap;flex-direction: column;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: .8s;
+    border: .5px solid #ccc;
+}
+.host_lvl span{
+    color: blue;
+    margin: 9px 0 15px;
+
+}
+.price{
+    color: blue;
+    padding: 10px 0;
+}
+.host_lvl p{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.host_lvl a{
+    display: flex;
+    width: 50%;
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    height: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 15px;
+}
+.host_lvl a:hover{
+    color: black;
+    background-color: #fff;
+    border: .5px solid #ccc;
+}
+.host_lvl:hover{
+    transform: scale(1.1);
+}
+
+
+/*=============================oooOooo=============================*/
+/*============================= Domaine =============================*/
+.cnt_domaine{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    color: #fff;
+    background: black;
+}
+.form_domain{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.cnt_domaine input{
+    width: 700px;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+.cnt_domaine select{
+    width: 70px;
+    height: 40px;
+    width: 100px;
+}
+
+.cnt_domaine a{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    color: black;
+
+}
+.cnt_domaine a:hover{
+    background-color: black;
+    color: #fff;
+    border: .5px solid #ccc;
+    
+}
+
+/*=============================oooOooo=============================*/
+
+/*============================= Contact =============================*/
+.cnt_conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: auto;
+    border: .5px solid #ccc;
+    margin: 15px 0;
+    
+}
+.contact_form h3{
+    margin: 20px;
+}
+.contact_form input{
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: .5px solid #ccc;
+}
+.contact_form textarea{
+    width: 300px;
+    border: none;
+    border-bottom: .5px solid #ccc;
+    padding: 10px;
+    resize: none;
+    font-size: 13px;
+}
+
+.contact_form a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    margin: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.contact_form a:hover{
+    background-color: #fff;
+    color: black;
+    border: .5px solid #ccc;
+
+}
+
+
+
+
+/*=============================oooOooo=============================*/
+
+
+/*============================= Login Register =============================*/
+.cnt_join{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .8);
+    z-index: 9999999999;
+    
+}
+
+.social_media_lg{
+    text-decoration: none;
+    font-size: 40px;
+    padding: 0 10px;
+    display: flex;
+    color: black;
+    margin: 10px;
+    gap: 40px;
+}
+
+.joinus_frm input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-bottom: .5px solid #ccc;
+    background-color: transparent;
+    color: black;
+}
+
+.input_cnt_register{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn_joinUs_join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: black;
+    color:#fff;
+}
+.btn_joinUs_join:hover{
+    color: black;
+    background: #fff;
+    border: .5px solid #ccc;
+}
+
+.joinus_frm{
+    color: black;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.joinus_frm h1{
+    padding: 20px;
+}
+
+.register_btn{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.login_btn{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.closeform{
+    position: fixed;
+    top: 40px;
+    cursor: pointer;
+    right: 40px;
+    color: black;
+}
+
+/*=============================oooOooo=============================*/
+
+/*============================= Footer =============================*/
+.footer_cnt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: black;
+}
+.footer_up{
+    width: 100%;
+    background: black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.footer_up_cnt a{
+    margin: 15px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.footer_up_cnt i{
+    margin-right: 9px;
+}
+
+.footer_up_cnt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    width: 300px;
+    padding: 40px 0;
+    height: auto;
+    background: black;
+}
+
+.logo_footer{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Akaya Kanadaka', cursive;
+    outline: none;
+}
+
+.footer_down{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: black;
+    padding: 20px 0;
+}
+/*=============================oooOooo=============================*/
+
+
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* About us page */
+.page_aboutus_cnt{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.page_aboutus_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    background: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.page_aboutus_info h1{
+    margin: 15px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Akaya Kanadaka', cursive;
+    outline: none;
+}
+.page_aboutus_info a{
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.page_aboutus_lrn{
+    border-radius: 10px;
+    display: flex;
+    width: 800px;
+    height: auto;
+    background: #fff;
+    border: .5px solid #ccc;
+    gap: 40px;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page_aboutus_lrn_ex{
+    display: flex;
+    width: 300px;
+    height: 420px;
+    border: .5px solid #ccc;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.about_web{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/aboutus_page/web.jpg);
+    background-size: cover;
+}
+.about_des{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/aboutus_page/design.jpg);
+    background-size: cover;
+}
+
+.about_hst{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/aboutus_page/host.jpg);
+    background-size: cover;
+}
+
+.about_pht{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/aboutus_page/photor.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+/* =========================================================================================================================================================================================== */
+
+
+
+
+
+
+
+
+
+/*============================= Media =============================*/
+@media only screen and (max-width: 1100px)  {
+    /* Header */
+    .link_header{
+        position: absolute;
+        display: block;
+        top: 80px;
+        left: -100%;
+        background-color: black;
+        width: 100%;
+        height: calc(100vh - 80px);
+        text-align: center;
+        transition: left .5s;
+        
+    }
+    .link_header a{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .link_header.visible{
+        left: 0;
+    }
+
+
+    .introduction_header h1{
+        font-size: 15px;
+    }
+    .header .toggle{
+        display: initial;
+        cursor: pointer;
+    }
+    /* About we do */
+    .who_cnt{
+        display: block;
+    }
+    .who_info{
+        width: 100%;
+    }
+    /* learning */
+    .lng_cnt_all{
+        width: 100%;
+        padding: 150px 10px;
+    }
+    /* hostin */
+    .host_info_text{
+        margin-bottom: 50px;
+    }
+    .host_info_text a{
+        display: flex;
+        width: 50%;
+        
+    }
+    .host_lvl{
+        width: 300px;
+    }
+    /* domeine */
+    .cnt_domaine input{
+        width: 200px;
+    }
+    .cnt_domaine select{
+        width: 50px;
+    }
+    .cnt_domaine a{
+        width:200px;
+    }
+    /* Disign */
+    .cnt_design_wlc h1{
+        font-size: 25px;
+    }
+    .cnt_design_wlc a{
+        width: 200px;
+    }
+    /* Photographing */
+    .photographe_wlcm h1{
+        font-size: 25px;
+    }
+
+    .photographe_wlcm a{
+        width: 200px;
+    }
+    .product_photo{
+        width: 200px;
+    }
+    
+}
+
+
+/*=============================oooOooo=============================*/
+
